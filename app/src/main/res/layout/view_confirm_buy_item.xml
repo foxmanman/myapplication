@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="100.0dip"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/id_front"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView" />
+
+        <Button
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dip"
+            android:id="@+id/button2"
+            android:background="@mipmap/goods13"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:id="@+id/iv_confirm_buy_icon"
+                android:layout_width="90.0dip"
+                android:layout_height="90.0dip"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY"
+                android:src="@mipmap/knickknack03" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.0"
+            android:layout_marginLeft="10.0dip"
+            android:focusable="false"
+            android:minHeight="125.0dip"
+            android:padding="5.0dip">
+
+            <TextView
+                android:id="@+id/tv_confirm_buy_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="2015爆款玩具熊"
+                android:textColor="@color/black"
+                android:textSize="20.0dip"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tv_confirm_buy_goods_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tv_confirm_buy_status"
+                android:maxLines="2"
+                android:text="玩偶系列"
+                android:textColor="@color/black"
+                android:textSize="17.0dip" />
+
+            <TextView
+                android:id="@+id/tv_confirm_buy_goods_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_confirm_buy_goods_name"
+                android:maxLines="2"
+                android:text="型号:中型40厘米"
+                android:textColor="@color/gray"
+                android:textSize="12.0dip" />
+
+           <!-- <TextView
+                android:id="@+id/tv_confirm_buy_goods_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_confirm_buy_goods_content"
+                android:layout_marginTop="5.0dip"
+                android:maxLines="1"
+                android:text="2"
+                android:textColor="@color/gray"
+                android:textSize="16.0dip" />
+                  android:layout_toRightOf="@+id/tv_confirm_buy_goods_count"
+                -->
+
+            <TextView
+                android:id="@+id/tv_confirm_buy_goods_price"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_confirm_buy_goods_content"
+                android:layout_marginTop="5.0dip"
+
+                android:gravity="left"
+                android:maxLines="1"
+                android:text="￥68"
+                android:textColor="@color/red"
+                android:textSize="16.0dip" />
+
+            <Button
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:id="@+id/button"
+                android:layout_below="@+id/tv_confirm_buy_status"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:gravity="bottom"
+                android:background="@mipmap/goods2"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

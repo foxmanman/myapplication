@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/white"
+        android:paddingBottom="4.0dip"
+        android:paddingTop="4.0dip">
+
+        <TextView
+            android:id="@+id/tv_sorts_search"
+            android:layout_width="45.0dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="搜索"
+            android:textColor="@color/gray" />
+
+        <RelativeLayout
+            android:id="@+id/iv_sorts_search_back"
+            android:layout_width="30.0dip"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:layout_width="20.0dip"
+                android:layout_height="20.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5.0dip"
+                android:src="@mipmap/backcall" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_sorts_search_contain"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5.0dip"
+            android:layout_toLeftOf="@id/tv_sorts_search"
+            android:layout_toRightOf="@id/iv_sorts_search_back"
+            android:background="@drawable/xml_sorts_search_border">
+
+            <ImageView
+                android:id="@+id/iv_sorts_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:src="@mipmap/icon_search" />
+
+            <RelativeLayout
+                android:id="@+id/rl_sorts_search_clear_search_content"
+                android:layout_width="35.0dip"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/icon_close" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/et_sorts_search_search"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_toLeftOf="@id/rl_sorts_search_clear_search_content"
+                android:layout_toRightOf="@id/iv_sorts_search"
+                android:background="@null"
+                android:textCursorDrawable="@null"
+                android:singleLine="true"
+                android:textColor="@color/black" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="@color/bg_gray" />
+
+    <com.swntek.happyshop.view.CustomListView
+        android:id="@+id/lv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/bg_gray"
+        android:dividerHeight="1.0dip"
+        android:listSelector="@color/transparent" />
+</LinearLayout>

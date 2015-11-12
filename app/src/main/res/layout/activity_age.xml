@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/tv_title"
+            android:layout_width="fill_parent"
+            android:text="年龄" />
+
+        <TextView
+            android:id="@+id/tv_age_cancel"
+            android:layout_width="45.0dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10.0dip"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/black"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/tv_age_save"
+            android:layout_width="45.0dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10.0dip"
+            android:gravity="center"
+            android:text="保存"
+            android:textColor="@color/black"
+            android:textSize="16.0sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:layout_marginTop="15.0dip"
+        android:background="@drawable/xml_info_border"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="8.0dip">
+
+        <TextView
+            android:id="@+id/tv_setting_nametxt"
+            style="@style/style_personal_my"
+            android:text="年龄:" />
+
+        <ImageView
+            android:id="@+id/iv_age_clear_content"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:padding="5.0dip"
+            android:src="@mipmap/icon_close" />
+
+        <EditText
+            android:id="@+id/et_age_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@+id/iv_age_clear_content"
+            android:layout_toRightOf="@+id/tv_setting_nametxt"
+            android:background="@null"
+            android:hint="请输入年龄" />
+    </RelativeLayout>
+</LinearLayout>

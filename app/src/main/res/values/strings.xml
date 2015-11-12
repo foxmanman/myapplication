@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">奇乐儿</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <!-- tab -->
+    <string name="bottom_tab_first">产品</string>
+    <string name="bottom_tab_second">分类</string>
+    <string name="bottom_tab_third">购物车</string>
+    <string name="bottom_tab_fourth">个人</string>
+
+
+
+
+    <!-- 下拉刷新 -->
+    <string name="p2refresh_head_load_more" translatable="false"></string>
+    <string name="p2refresh_end_load_more">点击加载更多</string>
+    <string name="p2refresh_end_click_load_more">点击加载</string>
+    <string name="p2refresh_release_refresh">数据刷新</string>
+    <string name="p2refresh_pull_to_refresh">数据刷新</string>
+    <string name="p2refresh_pull_to_refresh_chathis">下拉查看聊天记录</string>
+    <string name="p2refresh_doing_head_refresh">正在刷新&#8230;</string>
+    <string name="p2refresh_doing_end_refresh">加载中&#8230;</string>
+    <string name="p2refresh_refresh_lasttime">最近更新&#160;&#058;&#160;</string>
+    <string name="image_desc">图片</string>
+    <string name="title_activity_goods_one">GoodsOneActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_confirm_buy">ConfirmBuyActivity</string>
+    <string name="title_activity_new_address">NewAddressActivity</string>
+
+</resources>

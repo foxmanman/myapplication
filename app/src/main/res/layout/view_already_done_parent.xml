@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_wait_parent_item_oid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10.0dip"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <com.swntek.happyshop.view.MyListView
+        android:id="@+id/lv_buylist_item_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:divider="@color/transparent"
+        android:dividerHeight="5.0dip"
+        android:fadingEdge="none"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:listSelector="@*android:color/transparent"
+        android:scrollbars="none"
+        android:scrollingCache="false" />
+
+    <RelativeLayout
+        android:id="@+id/rl_wait_parent_item_bottom_contain"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip">
+
+            <TextView
+                android:id="@+id/tv_already_done_status_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10.0dip"
+                android:gravity="center"
+                android:text="已完成"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/tv_already_done_goods_delete"
+                android:layout_width="70.0dip"
+                android:layout_height="40.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10.0dip"
+                android:background="@drawable/xml_buylist_deltet"
+                android:gravity="center"
+                android:minWidth="80.0dip"
+                android:text="删除"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/tv_already_done_goods_judgement"
+                android:layout_width="70.0dip"
+                android:layout_height="40.0dip"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10.0dip"
+                android:layout_toLeftOf="@+id/tv_already_done_goods_delete"
+                android:background="@drawable/xml_buylist_judge_btn"
+                android:gravity="center"
+                android:minWidth="80.0dip"
+                android:text="评价"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_already_done_refund"
+                android:layout_width="70.0dip"
+                android:layout_height="40.0dip"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10.0dip"
+                android:layout_toLeftOf="@+id/tv_already_done_goods_judgement"
+                android:background="@drawable/xml_buylist_btn"
+                android:gravity="center"
+                android:minWidth="80.0dip"
+                android:text="申请退款"
+                android:textColor="@color/gray" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_below="@+id/rl"
+            android:background="@color/grey" />
+    </RelativeLayout>
+</LinearLayout>

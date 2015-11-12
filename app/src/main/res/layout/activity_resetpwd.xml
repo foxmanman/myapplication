@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_reset_pwd_title_contain"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@drawable/xml_info_border1">
+
+        <TextView
+            android:id="@+id/tv_employe_name"
+            style="@style/tv_title"
+            android:layout_width="fill_parent"
+            android:layout_marginBottom="1.0dip"
+            android:text="修改密码" />
+
+        <RelativeLayout
+            android:id="@+id/iv_reset_pwd_back"
+            android:layout_width="40.0dip"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:layout_width="20.0dip"
+                android:layout_height="20.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:src="@mipmap/backcall" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/btn_reset_pwd_submit"
+            android:layout_width="50.0dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="完成"
+            android:textColor="@color/black"
+            android:textSize="16.0dip" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/rl_old"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_reset_pwd_title_contain"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="70.0dip"
+            android:layout_height="40dp"
+            android:text="旧密码:"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/et_reset_pwd_old_pwd"
+            android:layout_width="200.0dip"
+            android:layout_height="@dimen/edite_text_height"
+            android:background="@drawable/xml_reset_pwd_edit"
+            android:inputType="textPassword"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/iv_reset_pwd_old_pwd"
+            android:layout_width="20.0dip"
+            android:layout_height="45.0dip"
+            android:layout_below="@+id/rl_reset_pwd_title_contain"
+            android:layout_marginLeft="10.0dip"
+            android:layout_toRightOf="@+id/et_reset_pwd_old_pwd" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rl_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_old"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5.0dip"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="70.0dip"
+            android:layout_height="@dimen/edite_text_height"
+            android:text="新密码:"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/et_reset_pwd_pwd"
+            android:layout_width="200.0dip"
+            android:layout_height="@dimen/edite_text_height"
+            android:layout_below="@+id/et_reset_pwd_old_pwd"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/xml_reset_pwd_edit"
+            android:inputType="textPassword"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/iv_reset_pwd_pwd"
+            android:layout_width="20.0dip"
+            android:layout_height="45.0dip"
+            android:layout_below="@+id/et_reset_pwd_old_pwd"
+            android:layout_marginLeft="10.0dip"
+            android:layout_toRightOf="@+id/et_reset_pwd_pwd" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rl_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_new"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5.0dip"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="70.0dip"
+            android:layout_height="@dimen/edite_text_height"
+            android:text="确认密码:"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/et_reset_pwd_confirm"
+            android:layout_width="200.0dip"
+            android:layout_height="@dimen/edite_text_height"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/xml_reset_pwd_edit"
+            android:inputType="textPassword"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/iv_reset_pwd_confirm"
+            android:layout_width="20.0dip"
+            android:layout_height="45.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_toRightOf="@+id/et_reset_pwd_confirm" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_reset_pwd_negative_content"
+        android:layout_width="240.0dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_confirm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5.0dip"
+        android:text="两次密码不一致"
+        android:textColor="@color/red"
+        android:textSize="13.0sp"
+        android:visibility="invisible" />
+</RelativeLayout>

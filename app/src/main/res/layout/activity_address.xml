@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_address_title_contain"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/maincolor">
+
+        <TextView
+            style="@style/tv_title"
+            android:layout_width="fill_parent"
+            android:text="地址管理"
+            android:textColor="@color/white"
+            />
+
+        <RelativeLayout
+            android:id="@+id/iv_address_back"
+            android:layout_width="40.0dip"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:layout_width="20.0dip"
+                android:layout_height="20.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:src="@mipmap/backcall" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_address_add_contain"
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/green"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20.0dip"
+            android:layout_height="20.0dip"
+            android:layout_marginRight="5.0dip"
+            android:src="@mipmap/icon_add_new_addr" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:text="新增地址"
+            android:textColor="@color/white"
+            android:textSize="18.0sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_address_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_address_add_contain"
+        android:layout_below="@+id/rl_address_title_contain"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/bg_gray"
+        android:dividerHeight="8.0dip"
+        android:listSelector="@color/transparent"
+        android:paddingTop="8.0dip"
+        android:scrollbars="none" />
+</RelativeLayout>

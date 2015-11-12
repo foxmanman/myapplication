@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_item_product_single"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+           <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/product_sdv"
+                android:layout_width="match_parent"
+                android:layout_height="180.0dip"
+                />
+
+          <!--  <TextView
+                android:id="@+id/tv_item_product_price"
+                android:layout_width="70.0dip"
+                android:layout_height="35.0dip"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="15.0dip"
+                android:background="#85000000"
+                android:gravity="center"
+                android:text="¥200.00"
+                android:textColor="@color/white" />-->
+
+           <!-- <ImageView
+                android:id="@+id/iv_item_product_favorite"
+                android:layout_width="45.0dip"
+                android:layout_height="45.0dip"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10.0dip"
+                android:padding="10.0dip"
+                android:src="@mipmap/icon_select_heart" />-->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_item_product_content"
+            android:layout_width="fill_parent"
+            android:layout_height="24.0dip"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip">
+
+            <TextView
+                android:id="@+id/tv_item_product_content_hots"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="剩3天10小时"
+                android:textColor="@color/red"
+                android:textSize="11.0dip" />
+
+            <TextView
+                android:id="@+id/tv_item_product_content_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tv_item_product_content_hots"
+                android:singleLine="true"
+                android:text="玩具乐园八折起"
+                android:textColor="@color/black"
+                android:textSize="15.0dip" />
+          <!--  <TextView
+                android:id="@+id/tv_item_product_content_effect"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_item_product_content_name"
+                android:maxLines="2"
+                android:text="测试"
+                android:textColor="#ff666666"
+                android:textSize="12.0dip" />-->
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rl_item_product_subject"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1.0dip">
+
+        <ImageView
+            android:id="@+id/iv_item_product_subject_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="140.0dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/fairground03"
+            />
+
+        <TextView
+            android:id="@+id/tv_item_product_subject_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="32.0dip" />
+
+        <TextView
+            android:id="@+id/tv_item_product_subject_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_item_product_subject_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10.0dip"
+            android:text="测试数据"
+            android:textColor="@color/white"
+            android:textSize="22.0dip" />
+    </RelativeLayout>
+</LinearLayout>

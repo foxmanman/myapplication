@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_setting_title"
+        android:layout_width="match_parent"
+        android:layout_height="80.0dip"
+        android:background="@color/maincolor">
+
+        <TextView
+            style="@style/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="80.0dip"
+            android:text="设置"
+            android:textColor="@color/white"
+            />
+
+        <RelativeLayout
+            android:id="@+id/iv_setting_back"
+            android:layout_width="40.0dip"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_backcall"
+                android:layout_width="20.0dip"
+                android:layout_height="20.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:src="@mipmap/backcall" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="@color/bg_gray" />
+
+    <LinearLayout
+        android:id="@+id/rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_setting_title"
+        android:layout_marginTop="15.0dip"
+        android:orientation="vertical">
+
+      <!-- <RelativeLayout
+            android:id="@+id/rl_setting_nickname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xml_info_border"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="8.0dip">
+
+            <TextView
+                android:id="@+id/tv_setting_address"
+                style="@style/style_personal_my"
+                android:text="我的收货地址" />
+
+            <TextView
+                android:id="@+id/tv_setting_nickname"
+                style="@style/style_personal_my"
+                android:layout_below="@id/tv_setting_nickname"
+                android:text="修改密码" />
+
+            <ImageView
+                android:layout_width="15.0dip"
+                android:layout_height="15.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/icon_arrow_right" />
+        </RelativeLayout>-->
+        <RelativeLayout
+            android:id="@+id/rl_setting_address"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/title_height"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="8.0dip">
+
+            <TextView
+                android:id="@+id/tv_setting_address"
+                style="@style/style_personal_my"
+                android:text="我的收货地址" />
+
+         <!--  <TextView
+                 android:id="@+id/tv_setting_sex"
+                 style="@style/style_personal_my"
+                 android:layout_toRightOf="@+id/tv_setting_sextxt"
+                 android:text="" />-->
+
+            <ImageView
+                android:id="@+id/iv_setting_address"
+                android:layout_width="15.0dip"
+                android:layout_height="15.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/icon_arrow_right" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_setting_password"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/title_height"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="8.0dip">
+
+            <TextView
+                android:id="@+id/tv_setting_password"
+                style="@style/style_personal_my"
+                android:text="修改密码" />
+
+            <!--<TextView
+                android:id="@+id/tv_setting_sex"
+                style="@style/style_personal_my"
+                android:layout_toRightOf="@+id/tv_setting_sextxt"
+                android:text="" />-->
+
+            <ImageView
+                android:id="@+id/iv_setting_password"
+                android:layout_width="15.0dip"
+                android:layout_height="15.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/icon_arrow_right" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_setting_tickling"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/title_height"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="8.0dip">
+
+            <TextView
+                android:id="@+id/tv_setting_sextxt"
+                style="@style/style_personal_my"
+                android:text="意见反馈" />
+
+          <!--  &lt;!&ndash; <TextView
+                 android:id="@+id/tv_setting_sex"
+                 style="@style/style_personal_my"
+                 android:layout_toRightOf="@+id/tv_setting_sextxt"
+                 android:text="" />&ndash;&gt;-->
+
+            <ImageView
+                android:id="@+id/iv_setting_sextxt"
+                android:layout_width="15.0dip"
+                android:layout_height="15.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/icon_arrow_right" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_setting_aboutme"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/title_height"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="8.0dip">
+
+            <TextView
+                android:id="@+id/tv_setting_aboutme"
+                style="@style/style_personal_my"
+                android:text="关于我们" />
+
+            <!--&lt;!&ndash; <TextView
+                 android:id="@+id/tv_setting_sex"
+                 style="@style/style_personal_my"
+                 android:layout_toRightOf="@+id/tv_setting_sextxt"
+                 android:text="" />&ndash;&gt;-->
+
+            <ImageView
+                android:id="@+id/iv_aboutme"
+                android:layout_width="15.0dip"
+                android:layout_height="15.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/icon_arrow_right" />
+        </RelativeLayout>
+     <!--&lt;!&ndash;   <RelativeLayout
+            android:id="@+id/rl_setting_age"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/title_height"
+            android:background="@drawable/xml_info_border"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="8.0dip">
+
+            <TextView
+                android:id="@+id/tv_setting_agetxt"
+                style="@style/style_personal_my"
+                android:text="年龄:" />
+
+            <TextView
+                android:id="@+id/tv_setting_age"
+                style="@style/style_personal_my"
+                android:layout_toRightOf="@+id/tv_setting_agetxt"
+                android:text="输入年龄" />
+
+            <ImageView
+                android:layout_width="15.0dip"
+                android:layout_height="15.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/icon_arrow_right" />
+        </RelativeLayout>&ndash;&gt;-->
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_setting_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/setting_exit"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20.0dip"
+        android:layout_centerInParent="true"
+        />
+</RelativeLayout>

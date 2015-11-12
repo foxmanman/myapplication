@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/collect_st_item"
+        layout="@layout/titlebar_left_tv_right_tv" />
+    <!--<RelativeLayout
+        android:id="@+id/all_select"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:layout_below="@id/collect_st_item"
+        >
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="  全选"
+            android:id="@+id/checkBox"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/textView"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>-->
+   <LinearLayout
+        android:id="@+id/ll_select"
+        android:layout_width="match_parent"
+        android:layout_height="34dip"
+        android:layout_below="@+id/collect_st_item"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <CheckBox
+            android:id="@+id/cb_collect_item_conut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:button="@null"
+            android:drawableLeft="@drawable/xml_collect_radiobtn"
+            android:paddingLeft="10.0dip"
+            android:drawablePadding="20dp"
+            android:paddingRight="10.0dip"
+            android:textColor="@color/orange_account"
+            android:text="全选"
+            android:textSize="11.0sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_collect_all"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="10.0dip"
+            android:gravity="right"
+            android:text="编辑全部"
+            android:textColor="@color/orange_account"
+            android:textSize="11.0sp"
+            android:layout_gravity="center_vertical"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_below="@+id/ll_select"
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/e"
+        android:orientation="vertical">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <com.swntek.happyshop.view.CustomListView
+                android:id="@+id/lv"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@null"
+                android:fadingEdge="none"
+                android:footerDividersEnabled="false"
+
+                />
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_pay"
+            android:layout_width="match_parent"
+            android:layout_height="40.0dip"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+
+          <!--  <CheckBox
+                android:id="@+id/cb_collect_item_chose"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:button="@null"
+                android:drawableLeft="@drawable/xml_collect_radiobtn"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:textColor="@color/black"
+                android:text="    全选"
+                />-->
+
+            <TextView
+                android:id="@+id/tv_count"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="合计：  136元"
+                android:layout_marginLeft="10.0dip"
+                android:textColor="@color/collect_texts_black"
+                android:textSize="14.0sp"
+                android:layout_gravity="center_vertical"
+                />
+
+            <TextView
+                android:id="@+id/tv_buy"
+                android:layout_width="80.0dip"
+                android:layout_height="fill_parent"
+                android:background="@color/orange_account"
+                android:text="结算"
+                android:textColor="@color/white"
+                android:textSize="14.0sp"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+       <!-- <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全选"
+            android:id="@+id/radioButton"
+            android:checked="false" />-->
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="90dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="5dp"
+    >
+
+  <com.facebook.drawee.view.SimpleDraweeView
+
+        android:id="@+id/stype_dv"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5.0dip"
+        android:layout_height="120.0dip"
+        android:background="@mipmap/classify05"
+        android:scaleType="fitXY"/>
+
+   <!-- <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="这是一个什么"
+        />-->
+
+</LinearLayout>

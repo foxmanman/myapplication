@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="5.0dip">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_item_address_person_contain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_item_address_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="收货人:xxxx"
+                android:textColor="@color/black"
+                android:textSize="17.0dip" />
+
+            <TextView
+                android:id="@+id/tv_item_address_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="80.0dip"
+                android:layout_marginRight="20.0dip"
+                android:text="13245688796"
+                android:textColor="@color/bg_gray" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_item_address_addr"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_item_address_person_contain"
+            android:layout_marginTop="10.0dip"
+            android:text="收货地址:wefjiojfs数量的飞机上来的快sdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfds"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_below="@+id/tv_item_address_addr"
+            android:layout_marginTop="5.0dip"
+            android:background="@color/bg_gray" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:layout_marginTop="5.0dip">
+
+        <CheckBox
+            android:id="@+id/rb_item_address_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:button="@drawable/xml_collect_radiobtn"
+            android:paddingLeft="25.0dip"
+            android:text="设为默认地址"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/tv_item_address_delete"
+            android:layout_width="60.0dip"
+            android:layout_height="40.0dip"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/xml_address_delete"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@color/red" />
+
+        <TextView
+            android:id="@+id/tv_item_address_edit"
+            android:layout_width="60.0dip"
+            android:layout_height="40.0dip"
+            android:layout_marginRight="8.0dip"
+            android:layout_toLeftOf="@+id/tv_item_address_delete"
+            android:background="@drawable/xml_address_edit"
+            android:gravity="center"
+            android:text="编辑"
+            android:textColor="@color/green" />
+    </RelativeLayout>
+</LinearLayout>

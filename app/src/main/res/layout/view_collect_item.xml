@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="90.0dip"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants" >
+    <!--android:descendantFocusability="afterDescendants">-->
+
+    <RelativeLayout
+        android:id="@+id/id_back"
+        android:layout_width="fill_parent"
+        android:layout_height="90.0dip"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/id_remove"
+            android:layout_width="60.0dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/red"
+            android:focusable="false"
+            android:text="删除"
+            android:textSize="24dip"
+            android:textColor="@color/white" />
+
+       <!-- <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray" />-->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/id_front"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="130.0dip"
+            android:orientation="horizontal"
+            android:padding="10.0dip">
+
+            <CheckBox
+                android:id="@+id/cb_collect_item_chose"
+                android:layout_width="15dip"
+                android:layout_height="15dip"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:button="@null"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:textColor="@color/black"
+                android:background="@drawable/ordermy_collect_btn"/>
+            <!-- android:drawableLeft="@drawable/xml_collect_radiobtn"-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:id="@+id/iv_collect_item_icon"
+                    android:layout_width="110.0dip"
+                    android:layout_height="110.0dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/knickknack03" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4.0"
+                android:focusable="false"
+                android:minHeight="150.0dip"
+                android:padding="5.0dip">
+
+                <TextView
+                    android:id="@+id/tv_collect_item_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="暂无商品"
+                    android:textSize="18dip"
+                    android:textColor="@color/black"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/tv_collect_item_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_toLeftOf="@id/tv_collect_item_status"
+                    android:maxLines="2"
+                    android:text="2015爆款玩具熊"
+                    android:textColor="@color/collect_text_black"
+                    android:textSize="14.0dip" />
+
+                <TextView
+                    android:id="@+id/tv_collect_item_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_collect_item_name"
+                    android:layout_marginTop="5.0dip"
+                    android:maxLines="2"
+                    android:text="玩偶系列"
+                    android:textColor="@color/collect_text_black"
+                    android:textSize="11.0dip" />
+
+                <TextView
+                    android:id="@+id/tv_collect_item_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_collect_item_content"
+                    android:layout_marginTop="5.0dip"
+                    android:maxLines="1"
+                    android:text="型号:中型40厘米"
+                    android:textColor="@color/collect_texts_black"
+                    android:textSize="11.0dip" />
+
+                <TextView
+                    android:id="@+id/tv_collect_item_count"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_collect_item_price"
+                    android:layout_marginTop="5.0dip"
+                    android:maxLines="1"
+                    android:text="￥68"
+                    android:textColor="@color/orange_account"
+                    android:textSize="11.0dip" />
+                <!-- android:gravity="right"-->
+
+                <LinearLayout
+                    android:id="@+id/ll_collect_item_count_contain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/tv_collect_item_price"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="5.0dip"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_collect_item_minus"
+                        android:layout_width="20.0dip"
+                        android:layout_height="20.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:src="@mipmap/collect_reduce" />
+
+                    <TextView
+                        android:id="@+id/tv_collect_item_count_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30.0dip"
+
+                        android:gravity="center"
+                        android:minWidth="40.0dip"
+                        android:text="1"
+                        android:textColor="@color/collect_texts_black"
+                        android:textSize="18.0dip" />
+<!--android:background="@drawable/xml_border_confirm_price"-->
+                    <ImageView
+                        android:id="@+id/iv_collect_item_plus"
+                        android:layout_width="20.0dip"
+                        android:layout_height="20.0dip"
+                        android:layout_marginLeft="5.0dip"
+                        android:src="@mipmap/coollect_add" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

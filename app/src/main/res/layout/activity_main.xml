@@ -1,0 +1,211 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 底部tab -->
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_tab"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        android:baselineAligned="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_first"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/iv_first"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/home_btn" />
+            <!--android:contentDescription="@null"-->
+            <!--android:src="@mipmap/appointment" -->
+
+
+            <TextView
+                android:id="@+id/tv_first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_first"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5.0dip"
+                android:text="@string/bottom_tab_first"
+                android:textColor="@drawable/selector_tab_tv"
+
+                android:textSize="12sp" />
+
+
+            <!--android:textSize="12sp" />-->
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_second"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/iv_second"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="5.0dip"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/classify_btn"
+                android:contentDescription="@null" />
+            <!--android:src="@mipmap/patientlist" -->
+            <!--/>-->
+
+            <TextView
+                android:id="@+id/tv_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_second"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5.0dip"
+                android:text="@string/bottom_tab_second"
+                android:textColor="@drawable/selector_tab_tv"
+
+                android:textSize="12sp" />
+
+            <!--android:textColor="@drawable/selector_tab_tv"-->
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_scanning"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/iv_scanning"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/scanning"
+                android:contentDescription="@null" />
+            <!--android:src="@mipmap/patientlist" -->
+            <!--/>-->
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_third"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/iv_third"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="5.0dip"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/shoppcat_btn"
+                android:contentDescription="@null" />
+            <!--android:src="@mipmap/setting" -->
+
+            <TextView
+                android:id="@+id/tv_third"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_third"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5.0dip"
+                android:text="@string/bottom_tab_third"
+                android:textColor="@drawable/selector_tab_tv"
+
+                android:textSize="12sp" />
+
+            <!--android:textColor="@drawable/selector_tab_tv"-->
+
+
+            <TextView
+                android:id="@+id/msg_mark"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginLeft="-10dp"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@+id/iv_third"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textSize="9sp"
+                android:visibility="visible" />
+            <!--android:background="@drawable/toast_circle_red"-->
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_fourth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/iv_fourth"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="5.0dip"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/men_btn"
+                android:contentDescription="@null" />
+            <!--android:src="@mipmap/patientlist" -->
+            <!--/>-->
+
+            <TextView
+                android:id="@+id/tv_fourth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_fourth"
+                android:layout_marginTop="5.0dip"
+                android:layout_centerHorizontal="true"
+                android:text="@string/bottom_tab_fourth"
+                android:textColor="@drawable/selector_tab_tv"
+
+                android:textSize="12sp" />
+
+            <!--android:textColor="@drawable/selector_tab_tv"-->
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <!-- 内容部分， fragment切换 -->
+
+
+    <LinearLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/line"
+        android:orientation="vertical"></LinearLayout>
+
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@id/ll_bottom_tab"
+        android:background="@color/c" />
+</RelativeLayout>
+

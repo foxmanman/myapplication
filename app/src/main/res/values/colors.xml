@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="c">#cccccc</color>
+    <color name="transparent">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="collect_text_black">#323232</color>
+    <color name="collect_texts_black">#9b9b9b</color>
+    <color name="white">#ffffffff</color>
+    <color name="gray">#646464</color>
+    <color name="textgray">#969696</color>
+    <color name="dialog_title">#ffff0000</color>
+    <color name="common_background">#ddd8d8</color>
+    <color name="txt_color_gray_3">#cbc4c6</color>
+	<color name="pink">#ff5d65</color>
+	<color name="brown">#cccccc</color>
+    <color name="pale_pink">#cbc4c6</color>
+    <color name="divider">#e8e3e3</color>
+    <color name="blue">#3299cc</color>
+    <color name="tabcolor">#6e686a</color>
+    <color name="personalcenter">#eb7ba0</color>
+    <color name="orange_account">#f15f16</color>
+    <!-- [begin]crop -->
+    
+    <color name="crop_bg">#D5D5D5</color>
+    
+    <color name="crop__button_bar">#f3f3f3</color>
+    <color name="crop__button_text">#666666</color>
+    <color name="crop__selector_pressed">#1a000000</color>
+    <color name="crop__selector_focused">#77000000</color>
+    <!-- [end]crop -->
+
+    <!--Theme-->
+
+    <color name="dark_red">#F4511E</color>
+    <color name="accent_red">#FF5722</color>
+    <!--Theme-->
+
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="light_grey">#ffbebebe</color>
+
+
+    <color name="green">#1bbc9b</color>
+    <color name="green_dark">#077b63</color>
+
+<!--section colors-->
+    <color name="red_light">#ffff4444</color>
+    <color name="green_light">#ff99cc00</color>
+    <color name="orange_light">#ffffbb33</color>
+    <color name="blue_light">#ff33b5e5</color>
+
+
+
+
+    <integer-array name="gplus_colors">
+        <item>@color/gplus_color_1</item>
+        <item>@color/gplus_color_2</item>
+        <item>@color/gplus_color_3</item>
+        <!--<item>@color/gplus_color_4</item>-->
+    </integer-array>
+    <color name="gplus_color_1">#3e802f</color>
+    <color name="gplus_color_2">#f4b400</color>
+    <color name="gplus_color_3">#427fed</color>
+    <color name="gplus_color_4">#b23424</color>
+    <color name="grey">#999999</color>
+
+
+
+    <color name="all6">#666666</color>
+    <color name="all9">#999999</color>
+    <color name="all29">#292929</color>
+    <color name="all5e">#5e5e5e</color>
+    <color name="c369">#336699</color>
+    <color name="reddark">#6e2318</color>
+    <color name="red">#646464</color>
+    <color name="press_e">#dddddd</color>
+    <color name="e">#eeeeee</color>
+
+    <!--     ======= ====== ==== 华丽的分割线 ======  ===== =====  -->
+
+
+    <color name="maincolor">#eb7ba0</color>
+    <color name="maindarkcolor">#1A5CEA</color>
+    <color name="bg_gray">#666667</color>
+
+
+
+
+</resources>
